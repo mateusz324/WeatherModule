@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="Exercise_WeatherModule::weather" title="Weather Module" module="Exercise_WeatherModule" sortOrder="51" resource="Exercise_WeatherModule::weatheer"/>
+        <add id="Exercise_WeatherModule::weather_history" title="Weather History" module="Exercise_WeatherModule" sortOrder="10" action="exercise_weathermodule/weather" resource="Exercise_WeatherModule::weather_history" parent="Exercise_WeatherModule::weather"/>
+    </menu>
+</config>

@@ -1,0 +1,15 @@
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../lib/internal/Magento/Framework/ObjectManager/etc/config.xsd">
+    <type name="Magento\Framework\View\Element\UiComponent\DataProvider\CollectionFactory">
+        <arguments>
+            <argument name="collections" xsi:type="array">
+                <item name="exercise_weathermodule_weather_listing_data_source" xsi:type="string">Exercise\WeatherModule\Model\ResourceModel\Weather\Collection</item>
+            </argument>
+        </arguments>
+    </type>
+    <virtualType name="Exercise\WeatherModule\Model\ResourceModel\Weather\Collection" type="Magento\Framework\View\Element\UiComponent\DataProvider\SearchResult">
+        <arguments>
+            <argument name="mainTable" xsi:type="string">exercise_weathermodule_weather</argument>
+            <argument name="resourceModel" xsi:type="string">Exercise\WeatherModule\Model\ResourceModel\Weather</argument>
+        </arguments>
+    </virtualType>
+</config>

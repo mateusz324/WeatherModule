@@ -1,0 +1,23 @@
+
+<?php
+    $weatherDetails = $block->getWeatherCollection();
+?>
+<table>
+    <tr>
+        <td>Temperature</td>
+        <td><?= $weatherDetails['temperature']?> degrees Celsius</td>
+    </tr>
+    <tr>
+        <td>Clouds</td>
+        <td><?= $weatherDetails['clouds']?> %</td>
+    </tr>
+    <tr>
+        <td>Wind Speed</td>
+        <td><?= $weatherDetails['wind_speed']?> km/h</td>
+    </tr>
+    <tr>
+        <td>Last Update</td>
+        <td><?= $weatherDetails['created_at']?></td>
+    </tr>
+
+</table>
